@@ -1,0 +1,162 @@
+.about {
+    background-color: #f8f9fa;
+    padding: 7rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.title {
+    background-color: #8f1810;
+    padding: 0.5rem 3rem;
+    position: sticky;
+    top: 0px;
+}
+
+.title a {
+    color: #000;
+    text-decoration: none;
+}
+
+.title span {
+    color: #fff;
+}
+
+.prod-head {
+    background-color: #8f1810;
+    display: flex;
+    gap: 10px;
+    width: 70%;
+    color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.user {
+    background-color: #6d0e07;
+    font-size: 30px;
+    padding: 10px 16px;
+    width: 60px;
+}
+
+.prod-head h3 {
+    color: white;
+    padding: 10px 0px;
+}
+
+.prod-grid {
+    width: 70%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.prod-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+h3 {
+    margin: 0 0 5px;
+    color: #333;
+}
+
+.position {
+    color: #777;
+    margin: 0 0 15px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+}
+
+.frame {
+    border-top: 3px dashed #8f1810;
+    border-bottom: 3px dashed #8f1810;
+}
+
+.message {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.message h3 {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #777;
+}
+
+.contact {
+    width: 75%;
+    margin: 20px;
+}
+
+#inp,
+textarea {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    margin: 20px 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+#inp:focus {
+    border: 2px solid #8f1810;
+}
+
+textarea:focus {
+    border: 2px solid #8f1810;
+}
+
+.general {
+    width: 25%;
+    margin: 20px;
+}
+
+.general p {
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .prod-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .message {
+        flex-direction: column;
+    }
+
+    .general {
+        width: 75%;
+    }
+}
+
+@media (max-width: 960px) {
+    .about {
+        padding: 4rem;
+    }
+}

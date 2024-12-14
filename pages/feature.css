@@ -1,0 +1,157 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pricing-card {
+    width: 250px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid #666;
+}
+
+.pricing-card h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.plan-name {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2.5em;
+    color: #8f1810;
+    background-color: #f8f9fa;
+}
+
+.price span {
+    font-size: 0.4em;
+    color: #666;
+}
+
+.features {
+    list-style: none;
+    /* margin-bottom: 25px; */
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    background-color: #fff;
+}
+
+.features li {
+    padding: 8px 0;
+    color: #666;
+    border-bottom: 1px solid #333;
+}
+
+.sign-up-btn {
+    background-color: #444;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.sign-up-btn:hover {
+    background-color: #333;
+}
+
+.sidebar {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    /* padding: 0 0 10px 5px; */
+    /* padding-bottom: 10px; */
+    margin-left: 20px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar ul li:before {
+    content: '';
+    position: absolute;
+    border-right: 2px solid #8f1810;
+    border-bottom: 2px solid #8f1810;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.sidebar a {
+    color: #666;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: #8f1810;
+}
+
+.txt-blurb {
+    margin-top: 20px;
+}
+
+.txt-blurb p {
+    color: #666;
+}
+
+@media (max-width: 1024px) {
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
